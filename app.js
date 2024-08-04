@@ -29,10 +29,10 @@ app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', req.headers.origin);
     // res.append('Access-Control-Allow-Origin','http://192.168.173.1:3000');
     // res.append('Access-Control-Allow-Origin','http://192.168.137.1:8181');
-    res.header('Access-Control-Allow-Headers', '*');
-    res.header('Access-Control-Allow-Methods', 'GET,POST,PATCH,DELETE,HEAD');
-    res.header('Access-Control-Allow-Credentials', true);
-
+    res.append('Access-Control-Allow-Headers', '*');
+    res.append('Access-Control-Allow-Methods', 'GET,POST,PATCH,DELETE,HEAD');
+    res.append('Access-Control-Allow-Credentials', true);
+    
     res.header('Access-Control-Allow-Origin', req.headers.origin);
     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
 
