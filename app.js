@@ -26,7 +26,7 @@ app.use('/public', express.static(path.join(__dirname, '/public')));
 app.use((req, res, next) => {
  
     // res.append('Access-Control-Allow-Origin','chrome-extension://donaljnlmapmngakoipdmehbfcioahhk');
-    res.header('Access-Control-Allow-Origin', req.headers.origin);
+    // res.header('Access-Control-Allow-Origin', req.headers.origin);
     // res.append('Access-Control-Allow-Origin','http://192.168.173.1:3000');
     // res.append('Access-Control-Allow-Origin','http://192.168.137.1:8181');
     res.append('Access-Control-Allow-Headers', '*');
