@@ -34,7 +34,7 @@ app.use((req, res, next) => {
     res.append('Access-Control-Allow-Credentials', true);
     
     res.header('Access-Control-Allow-Origin', req.headers.origin);
-    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+    // res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
 
     if (req.method === 'OPTIONS') {
       return res.status(200).end(); // Handle OPTIONS request
